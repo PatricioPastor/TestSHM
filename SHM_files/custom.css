@@ -1,0 +1,153 @@
+.accionAnchor{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.notDraggable{
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.btn-primary{
+    color: white !important;
+    border-color: black !important;
+    background-color: black !important;
+}
+.btn-black:hover{
+    color: white;
+    background-color: #222;
+}
+.btn-primary:disabled{
+    color: #555 !important;
+    border-color: black !important;
+    background-color: black !important;
+    opacity: 0.3;
+}
+.header {
+	background-color: black;
+}
+.page-item.active .page-link {
+    background-color: black;
+    border-color: black;
+}
+a {
+    color: black;
+}
+
+.status-brown,
+a.status-brown {
+	background-color: #9b5f00;
+	border: 1px solid #9b5f00;
+	color: #fff;
+}
+.status-black,
+a.status-black {
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+}
+.status-turquoise,
+a.status-turquoise {
+	background-color: #000;
+	border: 1px solid #000;
+	color: #fff;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color: black !important;
+}
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: black !important;
+}
+.bootstrap-datetimepicker-widget table td span.active {
+    background-color: black;
+}
+
+.mobile_row{
+    display: flex;
+}
+.normal_row{
+    display: none;
+}
+@media only screen and (min-width:576px) {
+    .normal_row{
+        display: flex;
+    }
+    .mobile_row{
+        display: none;
+    }
+}
+
+.m-b-23{
+    margin-bottom: 23px !important;
+}
+
+.custom-big-badge{
+	font-size: 14px;
+	min-height: 40px;
+	line-height: 35px;
+	width: 100%;
+}
+.fade-text{
+    opacity:0.5;
+}
+.datatable, .datatable-planilla{
+	border:none;
+	width: 100% !important;
+}
+.first-row-top{
+	top: 0px;
+}
+
+/*PROCEDIMIENTOS CREATE*/
+
+.upload-wrapper {
+    background-color: #ddd;
+    border-radius: 4px;
+    padding: 6px 0 0 6px;
+    width: 500px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.upload-wrapper a{
+    display: inline-block;
+    width:50%;
+    margin-bottom:0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.upload-wrapper button{
+    border:none;
+    background:none;
+    float:right;
+    line-height: 22px;
+    width:10%;
+}
+.upload-wrapper progress{
+    float: right;
+    margin-top: 3px;
+    width: 38%;
+}
+.thumbnail{
+    max-width:100px;
+    max-height:100px;
+}
+
+
+
+/*PROCEDIMIENTOS EDIT*/
+.img-label{
+    display: inline-block;
+    width:100%;
+    margin-bottom:0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
