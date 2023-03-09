@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -30,6 +33,51 @@
                 <br>
                 <label for="" class="siniestro-label">Nº de Siniestro</label>
                 <input type="text" name="" class="siniestro" id="">
+                <h3 class="radius">Tipo de Contingencia:</h3>
+                <div class="cont-contin">
+                    <label for="" class="acc-trabajo-label" >Accidente de Trabajo</label><label class="container">
+                        <input type="radio" name="contingencia" checked="checked">
+                        <div class="checkmark"></div>
+                      </label>
+                    <label for="" class="acc-itinere-label" >Accidente In Itinere</label><label class="container">
+                        <input type="radio" name="contingencia" checked="checked">
+                        <div class="checkmark"></div>
+                      </label>
+                    <label for="" class="enf-prof-label" >Enfermedad Profesional</label><label class="container">
+                        <input type="radio" name="contingencia" checked="checked">
+                        <div class="checkmark"></div>
+                      </label>
+                    <label for="" class="intercu-label" >Intercurrencia</label><label class="container">
+                        <input type="radio" name="contingencia" checked="checked">
+                        <div class="checkmark"></div>
+                      </label>
+                </div>
+                <div class="datos-trabajador">
+                    <h3 class="titulo-datos-trabajador">DATOS DEL TRABAJADOR</h3>
+                    <div class="container-datos-trabajador">
+                        <div class="container-nombre">
+                            <label for="" class="nombre-label">Apellido y Nombre</label>
+                            <input type="text" class="name-input">
+                        </div>
+                        <div class="container-cuil">
+                            <label for="" class="cuil-label">CUIL / DNI Nº</label>
+                            <input type="number" class="cuil-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="datos-empleador">
+                    <h3 class="titulo-datos-trabajador">DATOS DEL EMPLEADOR</h3>
+                    <div class="container-datos-trabajador">
+                        <div class="container-nombre">
+                            <label for="" class="nombre-label">Nombre de la empresa</label>
+                            <input type="text" class="name-input">
+                        </div>
+                        <div class="container-cuil">
+                            <label for="" class="cuil-label">CUIT</label>
+                            <input type="number" class="cuil-input">
+                        </div>
+                    </div>
+                </div>    
             </form>
         </section>
         <section>

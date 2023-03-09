@@ -5,6 +5,13 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
 
 body {
   background-color:#1f1e1e ;
@@ -26,6 +33,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    overflow: hidden;
 }
 .nav-items {
     display: flex;
@@ -37,11 +45,12 @@ body {
 
 .navbar img{
     width: 80px;
-    transition: 0.2s;
+    transition: 0.8s;
 }
 
 .navbar img:hover {
-  transform: scale(1.2);
+    filter: drop-shadow(0px 0px 16px #535353);
+    transform: scale(1.1);
 }
 
 .button2 {
@@ -190,7 +199,7 @@ body {
   left: 108px;
   top: 71px;
 
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
   /* identical to box height, or 133% */
 
@@ -201,15 +210,14 @@ body {
 }
 .siniestro-label {
 position: absolute;
-width: 106px;
+width: 140px;
 height: 20px;
 left: 108px;
 top: 166px;
 
 font-family: 'ABeeZee';
-font-style: italic;
 font-weight: 400;
-font-size: 15px;
+font-size: 16px;
 line-height: 20px;
 /* identical to box height, or 133% */
 
@@ -227,9 +235,243 @@ height: 50px;
 left: 108px;
 top: 194px;
 
-background: #000000;
+background: #161616;
 /* Divider/Light/1px - 60% */
 
 border: 1px solid rgba(228, 228, 228, 0.6);
 border-radius: 5px;
+}
+.radius {
+    position: absolute;
+width:300px;
+height: 20px;
+left: 110px;
+top: 303px;
+
+font-family: 'ABeeZee';
+
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 133% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+.cont-contin{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 1078px;
+height: 24px;
+left: 6px;
+top: 348px;
+}
+
+input[type="radio"]{
+    height: 18px;
+    width: 18px;
+}
+
+.cont-contin label{
+    font-family: 'ABeeZee';
+font-style: italic;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height, or 133% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+   }
+   
+   .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+   }
+   
+   /* Create a custom checkbox */
+   .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: 0.15s;
+   }
+   
+   /* When the checkbox is checked, add a blue background */
+   .container input:checked ~ .checkmark {
+    background-color: limegreen;
+    border-radius: 25px;
+    transition: 0.15s;
+   }
+   
+   /* Create the checkmark/indicator (hidden when not checked) */
+   .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+   }
+   
+   /* Show the checkmark when checked */
+   .container input:checked ~ .checkmark:after {
+    display: block;
+   }
+   
+   /* Style the checkmark/indicator */
+   .container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+   }
+
+
+   
+.datos-trabajador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+
+    position: absolute;
+    width: 886px;
+    height: 125px;
+    left: 108px;
+    top: 397px;
+    margin-top: 24px;
+    margin-bottom: 33px;
+}
+
+
+.titulo-datos-trabajador{
+    width: 228px;
+    height: 22px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+}
+.container-datos-trabajador{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 86px;
+
+width: 886px;
+height: 85px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.container-nombre{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 85px;
+    justify-content: space-between;
+}
+.container-cuil{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 85px;
+    justify-content: space-between;
+}
+
+.nombre-label{
+    width: 180px;
+    height: 20px;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    color: #000000;
+}
+.name-input{
+    box-sizing: border-box;
+    background: #000000;
+    /* Divider/Light/1px - 60% */
+    height: 50px;
+    border: 1px solid rgba(228, 228, 228, 0.6);
+    border-radius: 5px;
+}
+.cuil-label{
+    width: 132px;
+    height: 20px;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    color: #000000;
+}
+.cuil-input{
+    box-sizing: border-box;
+    background: #000000;
+    /* Divider/Light/1px - 60% */
+    height: 50px;
+    border: 1px solid rgba(228, 228, 228, 0.6);
+    border-radius: 5px;
+}
+.datos-empleador {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+position: absolute;
+width: 886px;
+height: 125px;
+left: 108px;
+top: 585px;
 }
