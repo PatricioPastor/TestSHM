@@ -21,7 +21,7 @@ body {
 .main-header {
     position: sticky;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-color: #161616eb;
     z-index: 999;
@@ -163,20 +163,17 @@ body {
     font-weight: 400;
   }
 
-  input {
-    color: white;
-    font-size: 16px;
-    padding:0 15px;
-
-  }
+  
 
   .formulario-art {
     position: absolute;
     width: 1078px;
-    height: 1613px;
+    height: max-content;
     background: #F1F1F1;
     border-radius: 16px;
     margin-bottom: 100px;
+    padding-bottom: 300px;
+    min-height: 1713px;
   }
 .art{
   position: absolute;
@@ -373,7 +370,7 @@ color: #000000;
 
 
 .titulo-datos-trabajador{
-    width: 228px;
+    width: 500px;
     height: 22px;
     
     font-family: 'Inter';
@@ -425,7 +422,7 @@ flex-grow: 0;
 }
 
 .nombre-label{
-    width: 180px;
+    width: 500px;
     height: 20px;
     font-family: 'ABeeZee';
     font-style: italic;
@@ -475,3 +472,115 @@ height: 125px;
 left: 108px;
 top: 585px;
 }
+.descripcion {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+position: absolute;
+width: 886px;
+height: auto;
+left: 108px;
+top: 720px;
+}
+.container-descripcion{
+
+}
+.input-desc{
+    max-width: 886px;
+    background: #161616;
+    min-height: 50px;
+    height: auto;
+    overflow: auto;
+/* Divider/Light/1px - 60% */
+resize:both;
+border: 1px solid rgba(228, 228, 228, 0.6);
+border-radius: 5px;
+}
+
+.container-desc{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width: 886px;
+    min-height:85px;
+    height: min-content;
+    justify-content: space-between;
+}
+.padding {
+    margin-bottom: 15px;
+}
+textarea {
+    color: white;
+    font-size: 16px;
+    padding: 16px;
+    resize: vertical;
+    overflow: visible;
+    margin-top: 15px;
+    width: 886px;
+}
+.container-desc-date{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.9;
+    filter: invert(0.9);
+}
+
+.fecha{
+width: 325px;
+height: 50px;
+margin-top: 15px;
+background: #161616;
+
+border: 1px solid rgba(228, 228, 228, 0.6);
+border-radius: 5px;
+}
+.button {
+    --hover-shadows: 8px 8px 33px rgba(50, 205, 50, 0.544),
+                      -8px -8px 33px rgba(0, 255, 0, 0.537);
+    --accent: limegreen;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 1.1em;
+    background-color: #212121;
+    color: white;
+    padding: 1em 2em;
+    transition: box-shadow ease-in-out 0.3s,
+                background-color ease-in-out 0.1s,
+                letter-spacing ease-in-out 0.1s,
+                transform ease-in-out 0.1s;
+    box-shadow: 13px 13px 33px #fff,
+                -13px -13px 33px #f1f1f1;
+                position: absolute;
+                bottom: 80px;
+                left: 108px;
+   }
+   
+   .button:hover {
+    box-shadow: var(--hover-shadows);
+   }
+   
+   .button:active {
+    box-shadow: var(--hover-shadows),
+                 var(--accent) 0px 0px 30px 5px;
+    background-color: var(--accent);
+    transform: scale(0.95);
+   }
+   input {
+    color: white;
+    font-size: 16px;
+    padding:0 15px;
+    font-weight: 200;
+  }
